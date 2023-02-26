@@ -1,6 +1,6 @@
 # Prejects
 ## Proje 1
-### insertion and selection sorts
+### Insertion and Selection sorts
 
 [22,27,16,2,18,6] -> Insertion Sort
 
