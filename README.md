@@ -44,3 +44,85 @@ Sıralama Algoritması:
 En iyi durum (Best case): O(n log n)
 Ortalama durum (Average case): O(n log n)
 En kötü durum (Worst case): O(n log n)
+
+## Proje 3
+### Binary Search Tree
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree (BST) aşamaları şu şekildedir:
+
+1. İlk eleman olan 7, BST'nin kökü olur.
+        7
+2. 5, kök olan 7'nin soluna yerleştirilir.
+        7
+       /
+      5
+3. 1, kök olan 7'nin soluna yerleştirilir.
+        7
+       /
+      5
+     /
+    1
+4. 8, kök olan 7'nin sağına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / 
+    1   /
+       3 
+        \
+         6
+5. 3, 5'in sağ alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / 
+    1   3 
+        \
+         6
+6. 6, 3'ün sağ alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / 
+    1   3 
+        \
+         6
+7. 0, 1'in sol alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / 
+    1   3 
+   /    \
+  0     6
+  
+8. 9, 8'in sağ alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / \ 
+    1   3   9
+   /    \
+  0     6
+9. 4, 3'ün sol alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / \ 
+    1   3   9
+   / \   \
+  0   4   6
+       \
+        2
+10. 2, 4'ün sol alt ağacına yerleştirilir.
+        7
+       / \
+      5   8
+     /   / \ 
+    1   3   9
+   / \   \
+  0   4   6
+     /
+    2
+
+Sonuçta oluşan BST yapısı yukarıdaki gibi olur.
